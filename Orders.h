@@ -1,6 +1,7 @@
 #ifndef ORDERS_H_INCLUDED
 #define ORDERS_H_INCLUDED
 
+
 typedef struct ORDER{
     char name_of_user[50];
     int user_id;
@@ -10,8 +11,6 @@ typedef struct ORDER{
     Agent * agent;
     struct ORDER * next;
 }ORDER;
-
-
 
 
 #endif // ORDERS_H_INCLUDED

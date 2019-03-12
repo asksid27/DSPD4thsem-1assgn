@@ -5,21 +5,16 @@ typedef struct Food_Item{
     char food_name[50];
     float price;
     char name_of_restaurant[50];
-    char addres_of_restaurnat[100];
+    char address_of_restaurant[100];
     struct Food_Item * next;
     int prep_time_in_min;
+    int count_for_user;
 }Food_Item;
-
-typedef struct CUISINE{
-    char name[50];
-    struct CUISINE * next;
-    Food_Item * dishes;
-}CUISINE;
 
 typedef struct MENU{
     char cuisine[50];
     struct MENU * next;
-    CUISINE * cuisines;
+    Food_Item * cuisines;
 }MENU;
 
 typedef struct Restaurant{

@@ -10,9 +10,8 @@ typedef struct Agent{
     float commission;
     char address_to_deliver[100];
     struct Agent * next;
-
+    int occupied;
+    int user_assigned;
 }Agent;
-
-
 
 #endif // AGENT_H_INCLUDED

@@ -8,7 +8,6 @@ typedef struct USER{
     char phone_no [13];
     char password[10];
     Food_Item * prev;
-    Food_Item * fav;
     struct USER * next;
 }USER;
 
